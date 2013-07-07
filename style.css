@@ -1,0 +1,94 @@
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+#x-follow-button {
+  height: 60px;
+  line-height: 60px;
+  font-family: sans-serif;
+  border: 1px solid #ddd;
+  width: 100px;
+  text-align: center;
+  background: #fff;
+  border-radius: 4px;
+  -moz-box-shadow:  1px 1px 0px 0px #ccc;
+  -webkit-box-shadow:  1px 1px 0px 0px #ccc;
+  box-shadow:  1px 1px 0px 0px #ccc;
+  float: left;
+}
+
+.node {
+  float: left;
+  text-align: center;
+  width: 100px;
+  height: 60px;
+  margin: 0 0 0 3px;
+  border: 1px solid #ccc;
+  background: white;
+  font-size: .8em;
+}
+
+#x-follow-button:active {
+  margin: 1px 0px 0px 1px
+  -moz-box-shadow:  0px 0px 0px 0px #ccc;
+  -webkit-box-shadow:  0px 0px 0px 0px #ccc;
+  box-shadow:  0px 0px 0px 0px #ccc;
+}
+
+
+.untoggle-text {
+  display: none;
+}
+
+.loading-text {
+  display: none;
+}
+
+.following .untoggle-text {
+  display: inline;
+}
+
+.following .toggle-text {
+  display: none;
+}
+
+.loading .loading-text {
+  display: inline;
+}
+
+.loading .text,
+.loading .toggle-text,
+.loading .untoggle-text {
+  display: none;
+}
+
+.msg {
+  display: none;
+}
+
+#broken-server, #broken-network {
+  color: #f00;
+}
+
+.sending #message #sending {
+  display: block;
+}
+
+.updating #server #updating {
+  display: block;
+}
+
+.broken-server #server #broken-server {
+  display: block;
+}
+
+.broken-network #message #broken-network {
+  display: block;
+}
+
+.receiving #message #receiving {
+  display: block;
+}
+
+.done {
+}

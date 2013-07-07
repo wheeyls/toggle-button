@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel='stylesheet' href='style.css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<meta charset=utf-8 />
+<title>Toggler</title>
+</head>
+<body>
+<div id="x-follow-button" class='left'>
+  <span class='toggle-text'>Toggle</span>
+  <span class="untoggle-text">Un-Toggle</span>
+  <span class="loading-text">Updating...</span>
+</div>
+
+<div id='ajax'>
+  <div id='message' class='node'>
+    Network
+    <div id='sending' class='msg'>Sending...</div>
+    <div id='receiving' class='msg'>Receiving...</div>
+    <div id='broken-network' class='msg'>Uh oh... :(</div>
+  </div>
+
+  <div id='server' class='node'>
+    Server
+    <div id='updating' class='msg'>Updating....</div>
+    <div id='broken-server' class='msg'>Uh Oh... :(</div>
+  </div>
+</div>
+<script src='simple_queue.js'></script>
+<script src='script.js'></script>
+</body>
+</html>
